@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene>
+	<Assets>
+		<Asset id="4901241233343370225" type="4" path="res://textures/materials/scuffedPlastic.tom"/>
+		<Asset id="7895389829195538332" type="4" path="res://textures/materials/paintPeelingConcrete.tom"/>
+		<Asset id="17111154678950447853" type="3" path="res://textures/hdr/misty_pines_2k.hdr"/>
+		<Asset id="17423943021166282161" type="4" path="res://textures/materials/greasyMetal.tom"/>
+	</Assets>
+	<Environment id="17111154678950447853"/>
+	<Entities root="0">
+		<Entity id="9" named="true">
+			<ComponentCamera3D>
+				<frustum>(-0.106760,0.106760,-0.057735,0.057735,0.100000,100.000000)</frustum>
+			</ComponentCamera3D>
+			<ComponentDescription>
+				<name>Camera</name>
+				<desc/>
+			</ComponentDescription>
+			<ComponentTransform3D>
+				<T>(-0.839911,3.628510,8.998937)</T>
+				<R>(-3.371619,343.497406,0.000000)</R>
+				<S>1.000000</S>
+			</ComponentTransform3D>
+		</Entity>
+		<Entity id="8" named="true">
+			<ComponentDirectionalLight>
+				<inclination>47.625999</inclination>
+				<arg_periapsis>49.027000</arg_periapsis>
+				<color>(0.950000,0.850000,0.500000)</color>
+				<ambient_color>(0.950000,0.850000,0.500000)</ambient_color>
+				<ambient_strength>0.300000</ambient_strength>
+				<brightness>0.000000</brightness>
+			</ComponentDirectionalLight>
+			<ComponentDirectionalLightMaterial>
+				<color>(0.950000,0.850000,0.500000,1.000000)</color>
+				<scale>0.200000</scale>
+				<bright>0.000000</bright>
+			</ComponentDirectionalLightMaterial>
+			<ComponentDescription>
+				<name>Sun</name>
+				<desc/>
+			</ComponentDescription>
+		</Entity>
+		<Entity id="7" parent="0">
+			<ComponentPBRMaterial id="17423943021166282161"/>
+			<ComponentOBB/>
+			<ComponentDescription>
+				<name>Sphere #0</name>
+				<desc/>
+			</ComponentDescription>
+			<ComponentScript>
+				<path>res://scripts/test.chai</path>
+				<parameters>
+					<float name="amplitude" value="7.069000"/>
+				</parameters>
+			</ComponentScript>
+			<ComponentTransform3D>
+				<T>(0.000000,0.000000,0.000000)</T>
+				<R>(0.000000,0.000000,0.000000)</R>
+				<S>2.000000</S>
+			</ComponentTransform3D>
+			<ComponentMesh proc="true" id="3314950115723566016"/>
+		</Entity>
+		<Entity id="6" parent="7">
+			<ComponentPBRMaterial id="4901241233343370225"/>
+			<ComponentOBB/>
+			<ComponentDescription>
+				<name>Sphere #1</name>
+				<desc/>
+			</ComponentDescription>
+			<ComponentScript>
+				<path>res://scripts/test.chai</path>
+				<parameters>
+					<float name="amplitude" value="30.000000"/>
+				</parameters>
+			</ComponentScript>
+			<ComponentTransform3D>
+				<T>(0.000000,1.500000,0.000000)</T>
+				<R>(0.000000,0.000000,0.000000)</R>
+				<S>0.500000</S>
+			</ComponentTransform3D>
+			<ComponentMesh proc="true" id="3314950115723566016"/>
+		</Entity>
+		<Entity id="5" parent="6">
+			<ComponentPBRMaterial id="7895389829195538332"/>
+			<ComponentOBB/>
+			<ComponentDescription>
+				<name>Sphere #2</name>
+				<desc/>
+			</ComponentDescription>
+			<ComponentTransform3D>
+				<T>(0.000000,1.500000,0.000000)</T>
+				<R>(0.000000,0.000000,0.000000)</R>
+				<S>0.500000</S>
+			</ComponentTransform3D>
+			<ComponentMesh proc="true" id="3314950115723566016"/>
+		</Entity>
+	</Entities>
+</Scene>
+

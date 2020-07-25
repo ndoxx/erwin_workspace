@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<string name="project_name" value="Test Scene"/>
+	<content>
+		<import>
+			<path name="atlas" value="res://work/images/atlas"/>
+			<path name="hdr" value="res://work/images/hdr"/>
+			<path name="material" value="res://work/images/materials"/>
+			<path name="font" value="res://work/fonts"/>
+			<path name="mesh" value="res://work/mesh"/>
+			<path name="scene" value="res://scenes"/>
+			<path name="script" value="res://scripts"/>
+		</import>
+		<export>
+			<path name="atlas" value="res://textures/atlas"/>
+			<path name="hdr" value="res://textures/hdr"/>
+			<path name="material" value="res://textures/materials"/>
+			<path name="font" value="res://textures/fonts"/>
+			<path name="mesh" value="res://mesh"/>
+			<path name="scene" value="res://scenes"/>
+			<path name="script" value="res://scripts"/>
+		</export>
+	</content>
+	<scene>
+		<path name="start" value="res://scenes/test_scene.scn"/>
+	</scene>
+</project>

@@ -1,0 +1,27 @@
+#pragma actor TestActor
+
+class TestActor
+{
+    var id;
+    var t_;
+
+    #pragma param<float,1,45,30>
+    var amplitude;
+
+    def TestActor(int e)
+    {
+        DLOG("Actor instance ctor: [" + to_string(e) + "]");
+        this.id = e;
+        this.t_ = 0.0f;
+        this.amplitude = 30.0f;
+    }
+
+    def __update(float dt)
+    {
+    	this.t_ += dt;
+        var angle = this.amplitude * sin(two_pi * this.t_);
+        auto& tr = scene.get_transform(this.id);
+        tr.set_rotation(vec3(angle,0,0));
+        scene.force_update(this.id);
+    }
+}
